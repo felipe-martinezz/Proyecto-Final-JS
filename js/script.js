@@ -533,7 +533,7 @@ function openNav() {
     actualizaCarritoLateral()
   }
   
-// Creamos Funcion para cerrar el slide
+// Creamos función para cerrar el slide
 
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
