@@ -1,0 +1,11 @@
+[   
+    {"id": 1, "marca": "Nike", "modelo": "HyperDunk", "talle": [{"40": 10}], "precio": "7000", "unidadesTotales": "10", "imagen": "imagenes/nike-hyperdunk.jpg"},
+    {"id": 2, "marca": "Nike", "modelo": "KD", "talle": [{"43": 5}], "precio": "7500", "unidadesTotales": "5", "imagen": "imagenes/nike kd.jpg"},
+    {"id": 3, "marca": "Adidas", "modelo": "Harden","talle": [{"43": 10}], "precio": "6000", "unidadesTotales": "10", "imagen": "imagenes/adidas harden.jpg"},
+    {"id": 4, "marca": "Adidas", "modelo": "Rose", "talle": [{"46": 10}], "precio": "5500", "unidadesTotales": "10", "imagen": "imagenes/adidas rose.jpg"},
+    {"id": 5, "marca": "Under Armour", "modelo": "Curry", "talle": [{"47": 15}], "precio": "9000", "unidadesTotales": "15", "imagen": "imagenes/ua curry.jpg"},
+    {"id": 6, "marca": "Under Armour", "modelo": "Embiid", "talle": [{"41": 15}], "precio": "8500", "unidadesTotales": "15", "imagen": "imagenes/ua embiid.jpg"},
+    {"id": 7, "marca": "Converse", "modelo": "Chuck Taylor", "talle": [{"42": 20}], "precio": "4500", "unidadesTotales": "20", "imagen": "imagenes/as chuck taylor.jpg"},
+    {"id": 8, "marca": "Jordan", "modelo": "Melo III", "talle": [{"44": 10}], "precio": "7000", "unidadesTotales": "10", "imagen": "imagenes/jordan melo.webp"},
+    {"id": 9, "marca": "Jordan", "modelo": "CP3 II", "talle": [{"45": 10}], "precio": "6500", "unidadesTotales": "10", "imagen": "imagenes/jordan cp3.webp"}
+]

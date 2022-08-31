@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>OnShoes</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style.min.css" rel="stylesheet">
+
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- SVG Icon -->    
+    <link rel="shorcut icon" href="../imagenes/Sneaker_Red.png">
+    
+</head>
+
+<body>
+
+    <div id="main">
+    <!-- Header -->
+        <div class="container-fluid">
+            <div class="row bg-secondary py-2 px-xl-5">
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-dark" href="">Nosotros</a>
+                        <span class="text-muted px-2">|</span>
+                        <a class="text-dark" href="">Contacto</a>
+                        <span class="text-muted px-2">|</span>
+                        <a class="text-dark" href="">Terminos y condiciones</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-dark px-2" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-dark pl-2" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center py-3 px-xl-5">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <a href="../index.html" class="text-decoration-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">On</span>Shoes</h1>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-6 text-center">
+                    <p>Sabemos de sneakers</p>
+                </div>
+                <div class="col-lg-3 col-6 text-right">
+                  <a href="../index.html" class="btn border">
+                      <i id="botonCarrito" class="fas fa-reply text-primary"></i>
+                  </a>
+                  <a class="btn border">
+                      <i id="vaciarCarrito" class="fa fa-trash"></i>
+                  </a>
+              </div>
+            </div>
+        </div>   
+
+     <!-- Formulario -->
+
+        <div class="container">
+            <div class="py-5 text-center">
+              <h2>Formulario de Pago</h2>
+            </div>
+      
+            <div class="row">
+              <div class="col-md-4 order-md-2 mb-4">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                  <span id="vaciarCarrito" class="text-muted">Carrito</span>
+                  <span id="carritoTotal" class="badge badge-secondary badge-pill"></span>
+                </h4>
+                <ul class="list-group mb-3 carritoCheckOut">
+                </ul>
+      
+                <form class="card p-2">
+                  <div class="input-group justify-content-between lh-condensed" style="padding: 1rem 1.25rem">
+                    <div>
+                        <h6 class="my-0">Precio Final</h6>
+                        <small id="descuento" class="text-muted">5% OFF</small>
+                    </div>
+                    <span id="montoTotal" class="text-muted"></span>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">Datos de Facturación y Envío</h4>
+                <form class="needs-validation" novalidate>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName">Nombre</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Debe ingresar un nombre valido
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName">Apellido</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Debe ingresar un apellido valido
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="mb-3">
+                    <label for="username">Usuario</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                      </div>
+                      <input type="text" class="form-control" id="username" placeholder="Username" required>
+                      <div class="invalid-feedback" style="width: 100%;">
+                        Ingrese su nombre de usuario
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="mb-3">
+                    <label for="email">Email <span class="text-muted"></span></label>
+                    <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com">
+                    <div class="invalid-feedback">
+                      Por favor ingrese un correo valido
+                    </div>
+                  </div>
+      
+                  <div class="mb-3">
+                    <label for="address">Calle</label>
+                    <input type="text" class="form-control" id="address" placeholder="Avenida, Calle, o Pasaje" required>
+                    <div class="invalid-feedback">
+                      Por favor ingrese la dirección de envío
+                    </div>
+                  </div>
+      
+                  <div class="mb-3">
+                    <label for="address2">Esquina <span class="text-muted"></span></label>
+                    <input type="text" class="form-control" id="address2" placeholder="Ingrese las 2 esquinas">
+                  </div>
+      
+                  <div class="row">
+                    <div class="col-md-5 mb-3">
+                      <label for="country">País</label>
+                      <select class="custom-select d-block w-100" id="country" required>
+                        <option value="">Seleccionar...</option>
+                        <option>Uruguay</option>
+                        <option>Argentina</option>
+                        <option>Brasil</option>
+                        <option>Chile</option>
+                        <option>España</option>
+                        <option>Resto del Mundo</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Debes seleccionar un país
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="state">Departamento, Provincia</label>
+                      <select class="custom-select d-block w-100" id="state" required>
+                        <option value="">Seleccionar...</option>
+                        <option>Montevideo</option>
+                        <option>Canelones</option>
+                        <option>Maldonado</option>
+                        <option>Rocha</option>
+                        <option>Colonia</option>
+                        <option>Paysandú</option>
+                        <option>Buenos Aires</option>
+                        <option>San Pablo</option>
+                        <option>Santiago de Chile</option>
+                        <option>Madrid</option>
+
+                      </select>
+                      <div class="invalid-feedback">
+                        Debes seleccionar un estado válido
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="zip">Código Postal</label>
+                      <input type="text" class="form-control" id="zip" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Ingrese el código postal
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-4">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="same-address">
+                    <label class="custom-control-label" for="same-address">La dirección de envío es la misma dirección de facturación</label>
+                  </div>
+                  <hr class="mb-4">
+      
+                  <h4 class="mb-3">Método de Pago</h4>
+      
+                  <div class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                      <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                      <label class="custom-control-label" for="credit">Tarjeta de Crédito</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                      <label class="custom-control-label" for="debit">Tarjeta de Débito</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="cc-name">Nombre del titular</label>
+                      <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                      <small class="text-muted">Nombre completo del titular de la tarjeta</small>
+                      <div class="invalid-feedback">
+                        Ingrese el nombre del titular de la tarjeta
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="cc-number">Número de Tarjeta</label>
+                      <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Ingrese un número de tarjeta
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 mb-3">
+                      <label for="cc-expiration">Fecha de Expiración</label>
+                      <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                      <div class="invalid-feedback">
+                        dd/mm/aaaa
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="cc-expiration">CVV</label>
+                      <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Se requiere el codigo de seguridad
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mb-4">
+                  <button id="botonCheckOut" class="btn btn-primary btn-lg btn-block" type="submit">Procesar Pago</button>
+                </form>
+              </div>
+            </div>
+        </div>
+    
+    <!-- Footer -->
+        <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
+            <div class="row px-xl-5 pt-5">
+                <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                    <a href="" class="text-decoration-none">
+                        <h1 class="mb-4 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border border-white px-3 mr-1">On</span>Shoes</h1>
+                    </a>
+                    <p>Sabemos de sneakers</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>18 de Julio 3243, Piso 25. Montevideo, Uruguay</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>onshoes@hotmail.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+598 98 453 432</p>
+                </div>
+            </div>
+            <div class="row border-top border-light mx-xl-5 py-4">
+                <div class="col-md-6 px-xl-0">
+                    <p class="mb-md-0 text-center text-md-left text-dark">
+                        &copy; <a class="text-dark font-weight-semi-bold" href="#">OnShoes</a> Since 1998. Todos los derechos son reservados.         
+                </p>
+                </div>
+                <div class="col-md-6 px-xl-0 text-center text-md-right">
+                    <img class="img-fluid" src="../imagenes/payments.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- scripts -->
+        <script src="../js/fasefinal.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    --></body>
+</html>
